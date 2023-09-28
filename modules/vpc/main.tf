@@ -1,5 +1,5 @@
 resource "aws_vpc" "new-vcp" {
-    cidr_block = "10.0.0.0/16"
+    cidr_block = var.vpc_cidr_block
     tags = {
         Name = "${var.prefix}-vpc"
     }
